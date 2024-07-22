@@ -58,11 +58,12 @@
     top: 3.25em;
     left: 0;
     height: 30%;
-    width: 120%;
+    width: 100%;
     background-image: url("/images/image-hero-small.png");
-    background-size: 90%;
+    background-size: 110%;
     background-repeat: no-repeat;
     background-position-x: -1.125rem;
+    overflow-x: clip;
   }
 
   article:last-child {
