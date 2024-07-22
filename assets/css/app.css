@@ -64,4 +64,17 @@
     background-repeat: no-repeat;
     background-position-x: -1.125rem;
   }
+
+  /*
+  hsla(192, 37%, 48%, 0.5),
+  hsla(192, 37%, 48%, 0.5)
+  */
+  article:last-child {
+    background: linear-gradient(
+        hsla(192, 37%, 48%, 0.9),
+        hsla(192, 37%, 48%, 0.9)
+      ),
+      url("/images/image-footer-small.jpg");
+    background-size: cover;
+  }
 }
