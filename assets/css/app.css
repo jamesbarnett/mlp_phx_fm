@@ -1,0 +1,67 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This file is for your main application CSS */
+@layer base {
+  :root {
+    --primary-teal: hsl(192, 37%, 48%); /* RGB -77,150,168 HEX: */
+    --primary-mauve: hsl(268, 34%, 53%); /* 133,95,177 */
+    --primary-verylightblue: hsl(192, 90%, 77%); /* 143, 227, 249 */
+    --primary-paleorchid: hsl(268, 100%, 86%); /* 217, 84, 255 */
+
+    --neutral-900: hsl(240, 21%, 20%); /* 40, 40, 61 */
+    --neutral-400: hsl(240, 10%, 57%); /* 135, 135, 157 */
+    --neutral-100: hsl(0, 0%, 98%); /* 250, 250, 250 */
+
+    --fw-medium: 500;
+    --fw-black: 900;
+
+    color: var(--neutral-900);
+    font-family: "RedHatDisplay", sans;
+    font-weight: var(--fw-medium);
+    font-size: 1.125rem;
+  }
+
+  @font-face {
+    font-family: "RedHatDisplay";
+    font-style: "Regular";
+    font-weight: 900;
+    font-display: swap;
+    src: url("/fonts/RedHatDisplay-Black.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "RedHatDisplay";
+    font-style: "Regular";
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/RedHatDisplay-Medium.woff2") format("woff2");
+  }
+
+  body {
+  }
+
+  .flow > * + * {
+    margin-top: var(--flow-space, 1em);
+  }
+
+  .wrapper {
+    margin-inline: auto;
+    padding-inline: 1rem;
+    max-width: 40ch;
+  }
+
+  .hero::before {
+    position: absolute;
+    content: "";
+    top: 3.25em;
+    left: 0;
+    height: 30%;
+    width: 120%;
+    background-image: url("/images/image-hero-small.png");
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position-x: -1.125rem;
+  }
+}
