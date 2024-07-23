@@ -6,7 +6,9 @@
 @layer base {
   :root {
     --primary-teal: hsl(192, 37%, 48%); /* RGB -77,150,168 HEX: */
+    --primary-lightteal: hsl(192, 53%, 64%);
     --primary-mauve: hsl(268, 34%, 53%); /* 133,95,177 */
+    --primary-lightmauve: hsl(268, 55%, 71%);
     --primary-verylightblue: hsl(192, 90%, 77%); /* 143, 227, 249 */
     --primary-paleorchid: hsl(268, 100%, 86%); /* 217, 84, 255 */
 
@@ -57,13 +59,64 @@
     content: "";
     top: 3.25em;
     left: 0;
-    height: 30%;
-    width: 100%;
+    height: 17.5rem;
+    width: 100dvw;
     background-image: url("/images/image-hero-small.png");
-    background-size: 110%;
-    background-repeat: no-repeat;
+    background-size: 23rem, auto;
+    background-repeat: repeat-x;
     background-position-x: -1.125rem;
     overflow-x: clip;
+  }
+
+  .hero::after {
+  }
+
+  @media (min-width: 48rem) {
+    .hero::before {
+      position: absolute;
+      content: "";
+      top: 3.25em;
+      left: 0;
+      height: 17.5rem;
+      width: 100dvw;
+      background-image: url("/images/image-hero.png");
+      background-size: 46rem, auto;
+      background-repeat: repeat-x;
+      background-position-x: -1.125rem;
+      overflow-x: clip;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .hero::before {
+      background-image: none;
+    }
+
+    main::before {
+      content: "";
+      position: absolute;
+      background-image: url("/images/image-hero-left.png");
+      background-repeat: no-repeat;
+      background-size: 394px 303px;
+      top: 7rem;
+      left: -25px;
+      width: 400px;
+      aspect-ratio: 1/1.3;
+      z-index: -1;
+    }
+
+    main::after {
+      content: "";
+      position: absolute;
+      background-image: url("/images/image-hero-right.png");
+      background-repeat: no-repeat;
+      background-size: 394px 303px;
+      top: 10rem;
+      right: -40px;
+      width: 400px;
+      aspect-ratio: 1/1.3;
+      z-index: -1;
+    }
   }
 
   article:last-child {
@@ -73,6 +126,27 @@
       ),
       url("/images/image-footer-small.jpg");
     background-size: cover;
+  }
+
+  @media (min-width: 48rem) {
+    article:last-child {
+      background: linear-gradient(
+          hsla(192, 37%, 48%, 0.9),
+          hsla(192, 37%, 48%, 0.9)
+        ),
+        url("/images/image-footer-medium.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    article:last-child {
+      background: linear-gradient(
+          hsla(192, 37%, 48%, 0.9),
+          hsla(192, 37%, 48%, 0.9)
+        ),
+        url("/images/image-footer.jpg");
+    }
   }
 
   article:nth-child(3)::before {

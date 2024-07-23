@@ -19,7 +19,9 @@ module.exports = {
       colors: {
         primary: {
           teal: "var(--primary-teal)",
+          lightteal: "var(--primary-lightteal)",
           mauve: "var(--primary-mauve)",
+          lightmauve: "var(--primary-lightmauve)",
           paleorchid: "var(--primary-paleorchid)",
           verylightblue: "var(--primary-verylightblue)",
         },

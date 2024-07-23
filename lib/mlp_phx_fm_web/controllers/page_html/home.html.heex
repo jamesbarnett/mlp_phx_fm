@@ -1,35 +1,38 @@
 <.flash_group flash={@flash} />
-<main class="flow pb-[2rem]">
-  <header class="section">
+<main class="flow mx-auto lg:relative lg:overflow-x-clip">
+  <header class="section wrapper mx-auto">
     <img class="mx-auto pt-12 pb-4" src="/images/logo.svg" alt="meet">
   </header>
-  <article class="region flow mb-[10em] overflow-clip">
-    <h1 class="hero font-black text-4xl text-center mt-[6em]">Group Chat for Everyone</h1>
-    <p class="font-[500] text-[0.9375rem] text-center text-neutral-400 pb-4">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+  <article class="mb-[10em] md:px-12 lg:mx-[14rem]">
+    <h1 class="hero font-black text-4xl md:text-5xl text-center mt-[6em] md:mt-[8.5em] md:px-32 lg:mt-16 lg:mb-8 lg:text-[3.5rem]">Group Chat for Everyone</h1>
+    <p class="font-[500] text-[0.9375rem] text-center text-neutral-400 pb-4 md:px-24 lg:text-base">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
 
-    <button class="rounded-full block mx-auto bg-primary-teal font-black px-8 py-4 text-neutral-100">Download <span class="text-primary-verylightblue">v1.3</span></button>
-    <button class="rounded-full block mx-auto bg-primary-mauve p-8 px-8 py-4 text-neutral-100">What is it?</button>
-  </article>
-  <article class="mb-[6em] relative pt-[6rem]">
-    <div class="grid grid-cols-2 gap-[1.25rem] pb-[3.5rem]">
-      <img class="rounded-xl" src="/images/image-woman-in-videocall.jpg" alt="" />
-      <img class="rounded-xl" src="/images/image-women-videochatting.jpg" alt="" />
-      <img class="rounded-xl" src="/images/image-men-in-meeting.jpg" alt="" />
-      <img class="rounded-xl" src="/images/image-man-texting.jpg" alt="" />
+    <div class="md:flex md:flex-row md:justify-center">
+      <button class="rounded-full text-sm block mx-auto mb-4 bg-primary-teal hover:bg-primary-lightteal font-black px-8 md:px-[2.3rem] py-4 text-neutral-100 md:inline-block md:m-0 md:ms-auto md:me-2 lg:my-4">Download <span class="text-primary-verylightblue">v1.3</span></button>
+      <button class="rounded-full text-sm block mx-auto bg-primary-mauve hover:bg-primary-paleorchid font-black px-6 md:px-[1.625rem] py-4 text-neutral-100 md:inline-block md:m-0 md:me-auto md:ms-2 lg:my-4">What is it?</button>
     </div>
-    <p class="uppercase text-primary-teal text-center text-sm font-black tracking-[.25rem] pb-[1.25rem] mb-4">Built for modern use</p>
+  </article>
+  <article class="mb-[6em] relative pt-[6rem] px-4 md:mx-auto md:w-[42rem] lg:w-[60rem]">
+    <div class="grid grid-cols-2 gap-[1.25rem] pb-[3.5rem] md:grid md:grid-cols-[_1fr,_1fr,_1fr,_1fr] md:gap-[0.625rem]">
+      <img class="rounded-xl md:w-auto" src="/images/image-woman-in-videocall.jpg" alt="" />
+      <img class="rounded-xl md:w-auto" src="/images/image-women-videochatting.jpg" alt="" />
+      <img class="rounded-xl md:w-auto" src="/images/image-men-in-meeting.jpg" alt="" />
+      <img class="rounded-xl md:w-auto" src="/images/image-man-texting.jpg" alt="" />
+    </div>
+    <p class="uppercase text-primary-teal text-center text-sm font-black tracking-[.25rem] pb-[1.25rem] mb-4 md:pb-0">Built for modern use</p>
 
-    <h2 class="font-black text-[1.75rem] leading-8 text-center pb-[2rem]">Smarter meetings, all in one place</h2>
+    <h2 class="font-black text-[1.75rem] leading-8 text-center pb-[2rem] md:text-[2.25rem] md:leading-[2.375rem] md:mx-32">Smarter meetings, all in one place</h2>
 
-    <p class="text-sm text-neutral-400 text-center pb-16">Send messages, share files, show your screen, and record your meetings — all in one 
+    <p class="text-sm text-neutral-400 text-center pb-16 md:mx-12 md:leading-relaxed">Send messages, share files, show your screen, and record your meetings — all in one 
     workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
   </article>
-  <article class="pb-16 relative">
-    <h2 class="pt-12 pb-6 text-neutral-100 font-black text-3xl text-center leading-8">Experience more together</h2>
-    <p class="text-center text-neutral-100 mx-4 leading-snug pb-8">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+  <article class="pb-16 relative lg:grid lg:grid-cols-3 lg:grid-flow-row lg:ps-[9rem] lg:pe-12">
+    <h2 class="pt-12 pb-6 text-neutral-100 font-black text-3xl text-center leading-8 lg:text-4xl lg:text-left">Experience more together</h2>
+    <p class="text-center text-neutral-100 mx-4 leading-snug pb-8 lg:text-left lg:mx-12 lg:mt-12">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
 
-    <button class="text-neutral-100 font-black block mx-auto px-8 py-4 text-sm rounded-full bg-primary-mauve">
-      Download <span>v1.3</span>
+    <button class="text-neutral-100 font-black block mx-auto px-8 py-4 text-sm rounded-full bg-primary-mauve hover:bg-primary-lightmauve lg:self-center">
+
+      Download <span class="text-primary-paleorchid">v1.3</span>
     </button>
   </article>
 </main>
